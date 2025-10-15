@@ -1,0 +1,42 @@
+[
+    {
+        "id": "JuegoMesa1",
+        "categoria": "Juego de Mesa",
+        "nombre": "Catan",
+        "precio": 30000,
+        "descripcion": "Juego de estrategia para 3-4 jugadores.",
+        "tags": ["estrategia","familiar","3-4 jugadores"]
+    },
+    {
+        "id": "JuegoMesa2",
+        "categoria": "Juego de Mesa",
+        "nombre": "Carcassonne",
+        "precio": 25000,
+        "descripcion": "Juego de colocación de losetas para 2-5 jugadores.",
+        "tags": ["colocación","familiar","5 jugadores"]
+    },
+    {
+        "id": "Accesorio1",
+        "categoria": "Accesorio",
+        "nombre": "Control inalambrico Xbox Series X",
+        "precio": 60000,
+        "descripcion": "Control inalambrico para Xbox Series X.",
+        "tags": ["accesorio","gaming","xbox","control"]
+    },
+    {
+        "id": "Consola1",
+        "categoria": "Consola",
+        "nombre": "PlayStation5",
+        "precio": 550000,
+        "descripcion": "Consola de ultima generacion PlayStation5.",
+        "tags": ["consola","gaming","ps5","sony"]
+    },
+    {
+        "id": "JuegoMesa5",
+        "categoria": "Juego de Mesa",
+        "nombre": "Dixit",
+        "precio": 22000,
+        "descripcion": "Juego de cartas y creatividad para 3-6 jugadores.",
+        "tags": ["creatividad","familiar","6 jugadores"]
+    }
+]
