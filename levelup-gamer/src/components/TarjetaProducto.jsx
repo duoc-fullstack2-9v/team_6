@@ -1,18 +1,27 @@
 import { Link } from "react-router-dom";
 
-export default function TarjetaProducto({ p }) {
-  const src = p.image
-    ? new URL(`../assets/imagenes/productos/${p.image}`, import.meta.url).href
-    : "https://via.placeholder.com/800?text=Producto";
+function getImgUrl(nombreArchivo) {
+  if (!nombreArchivo) return "https://via.placeholder.com/800?text=Producto";
+  return new URL(`../assets/imagenes/productos/${nombreArchivo}`, import.meta.url).href;
+}
 
-     return (
+export default function TarjetaProducto({ p }) {
+  const id = p.id;
+  const name = p.nombre || p.name;
+  const category = p.categoria || p.category;
+  const price = typeof p.precio === "number" ? p.precio : p.price;
+  const image = p.imagen || p.image;
+
+  const src = getImgUrl(image);
+
+  return (
     <article className="card">
-      <img src={src} alt={p.name} className="card-img" loading="lazy" />
+      <img src={src} alt={name} className="card-img" loading="lazy" />
       <div className="card-body">
-        <h3>{p.name}</h3>
-        <p className="muted">{p.category}</p>
-        <p className="price">${p.price.toLocaleString("es-CL")}</p>
-        <Link className="btn" to={`/productos/${p.id}`}>Ver detalle</Link>
+        <h3>{name}</h3>
+        <p className="muted">{category}</p>
+        <p className="price">${price.toLocaleString("es-CL")}</p>
+        <Link className="btn" to={`/productos/${id}`}>Ver detalle</Link>
       </div>
     </article>
   );

@@ -1,4 +1,3 @@
-// src/pages/Productos.jsx
 import { useEffect, useState } from "react";
 import productosData from "../data/productos.json";
 import TarjetaProducto from "../components/TarjetaProducto.jsx";
@@ -12,13 +11,14 @@ export default function Productos() {
       if (!Array.isArray(productosData)) {
         throw new Error("El archivo productos.json no contiene un array.");
       }
-      // validación mínima de campos clave
       productosData.forEach((p, i) => {
-        if (!p.id || !p.name || typeof p.price !== "number") {
-          throw new Error(`Producto inválido en índice ${i}: revisa id/name/price.`);
+        const id = p.id;
+        const name = p.nombre || p.name;
+        const price = typeof p.precio === "number" ? p.precio : p.price;
+        if (!id || !name || typeof price !== "number") {
+          throw new Error(`Producto inválido en índice ${i} (id/nombre/precio).`);
         }
       });
-
       setProductos(productosData);
       setError("");
     } catch (e) {
@@ -32,7 +32,7 @@ export default function Productos() {
       <section className="container">
         <h1>Productos</h1>
         <p style={{color:"#f66"}}>⚠️ {error}</p>
-        <p>Abre la consola (F12 → Console) para ver detalles.</p>
+        <p>Revisa que el JSON esté bien formado y sin comas de más.</p>
       </section>
     );
   }
