@@ -3,14 +3,14 @@ export default function Home() {
     <>
       <section className="hero">
         <h1>LEVEL-UP GAMER</h1>
-        <p>Explora, juega y gana — tienda gamer en construcción 🚀</p>
+        <p>TIENDA GAMER PARA GAMERS WENOS PA LOS FUNKO POP</p>
         <div style={{marginTop:"1rem"}}>
-          <button onClick={()=>alert("¡Positivo! 🎉")}>Test VIH gratis</button>
+          <button onClick={()=>alert("Hmm si, aun positivo 👌")}>Test VIH gratis</button>
         </div>
       </section>
       <section className="container">
-        <h2>Productos destacados (próximamente)</h2>
-        <p>Usaremos categorías y descuentos DUOC 20% 😉</p>
+        <h2>Productos destacados (funko pops)</h2>
+        <p>se ofrecen descuento a empleados y señoras de los empleados 😉</p>
       </section>
     </>
   );
