@@ -23,7 +23,7 @@ export default function Productos_Detalle() {
   if (!p) return <section className="container">Cargando…</section>;
 
   const img = p.image
-    ? new URL(`../assets/img/products/${p.image}`, import.meta.url).href
+    ? new URL(`../assets/imagenes/productos/${p.image}`, import.meta.url).href
     : "https://via.placeholder.com/800?text=Producto";
 
   return (

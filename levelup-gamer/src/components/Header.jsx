@@ -23,6 +23,8 @@ export default function Header() {
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/productos">Productos</NavLink>
         <NavLink to="/login">Login</NavLink>
+        <NavLink to="/cart">Carrito</NavLink>
+
         <span style={{ marginLeft: "1rem" }}>🛒 {count}</span>
       </nav>
     </header>

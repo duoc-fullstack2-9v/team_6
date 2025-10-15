@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx";
 import Productos from "./pages/Productos.jsx";
 import Productos_Detalle from "./pages/Productos_Detalle.jsx";
 import Login from "./pages/Login.jsx";
+import Cart from "./pages/carrito.jsx";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/productos" element={<Productos />} />
           <Route path="/productos/:id" element={<Productos_Detalle />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </main>
       <Footer />
