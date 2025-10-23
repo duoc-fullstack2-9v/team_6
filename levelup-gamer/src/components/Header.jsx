@@ -33,16 +33,20 @@ export default function Header() {
       </nav>
 
       <div style={{display:"flex", alignItems:"center", gap:".5rem"}}>
-        {usuario ? (
-          <>
-            {usuario.duoc20 && <span className="badge-duoc">DUOC 20%</span>}
-            <span className="user-chip">Hola, {saludo}</span>
-            <button className="btn-outline" onClick={logout}>Cerrar sesión</button>
-          </>
-        ) : (
-          <small className="muted">No has iniciado sesión</small>
-        )}
-      </div>
+      {usuario ? (
+        <>
+          {usuario.duoc20 && <span className="badge-duoc">DUOC 20%</span>}
+          <span className="user-chip">Hola, {usuario.nombre || usuario.email}</span>
+          <button className="btn-outline" onClick={logout}>Cerrar sesión</button>
+        </>
+      ) : (
+        <>
+          <NavLink to="/login">Login</NavLink>
+          <NavLink to="/register">Registro</NavLink>
+        </>
+      )}
+    </div>
+
     </header>
   );
 }

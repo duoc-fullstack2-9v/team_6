@@ -142,3 +142,12 @@ nav a.active{ color:var(--accent) }
 ========================================================= */
 .muted{ color:var(--muted) }
 .price{ font-weight:700; margin:.25rem 0 }
+
+
+/* register */
+.auth-wrap{min-height:70vh;display:grid;place-items:center;padding:2rem}
+.auth-card{width:100%;max-width:440px;background:#0b0b0b;border:1px solid #1a1a1a;border-radius:16px;padding:1rem 1.25rem}
+.auth-title{margin:.25rem 0 1rem;text-align:center}
+.auth-actions{display:flex;justify-content:space-between;gap:.5rem;margin-top:.75rem}
+.auth-note{color:#c9c9c9;font-size:.9rem;text-align:center;margin-top:.5rem}
+

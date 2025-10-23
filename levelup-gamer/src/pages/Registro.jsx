@@ -1,0 +1,3 @@
+import Register from "./pages/Register.jsx";
+// ...
+<Route path="/register" element={<Register />} />
