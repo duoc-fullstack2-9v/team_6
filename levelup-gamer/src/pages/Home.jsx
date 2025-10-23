@@ -1,4 +1,12 @@
+import productosData from "../data/productos.json";
+import TarjetaProducto from "../components/TarjetaProducto.jsx";
+
 export default function Home(){
+  const destacados = productosData
+    .filter(p => p.destacado)
+    .sort(() => Math.random() - 0.5)
+    .slice(0,4);
+
   return (
     <>
       <section className="hero">
@@ -11,10 +19,15 @@ export default function Home(){
           </div>
         </div>
       </section>
+
       <section className="container">
         <h2 className="section-title">Destacados</h2>
+        <ul className="grid" style={{listStyle:"none",padding:0}}>
+          {destacados.map(p=>(
+            <li key={p.id}><TarjetaProducto p={p} /></li>
+          ))}
+        </ul>
       </section>
     </>
   );
 }
-

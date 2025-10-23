@@ -6,6 +6,7 @@
     "precio": 30000,
     "descripcion": "Juego de estrategia para 3-4 jugadores.",
     "imagen": "JM001_catan.jpg",
+    "destacado": true,
     "tags": ["estrategia", "familiar", "3-4 jugadores"]
   },
   {
@@ -15,6 +16,7 @@
     "precio": 25000,
     "descripcion": "Juego de colocación de losetas para 2-5 jugadores.",
     "imagen": "JM002_carcassone.jpg",
+    "destacado": true,
     "tags": ["colocación", "familiar", "5 jugadores"]
   },
   {
@@ -24,6 +26,7 @@
     "precio": 60000,
     "descripcion": "Control inalambrico para Xbox Series X.",
     "imagen": "AC001_control_xbox.jpg",
+    "destacado": true,
     "tags": ["accesorio", "gaming", "xbox", "control"]
   },
   {
@@ -33,6 +36,7 @@
     "precio": 550000,
     "descripcion": "Consola de ultima generacion PlayStation5.",
     "imagen": "CO001_ps5.jpg",
+    "destacado": true,
     "tags": ["consola", "gaming", "ps5", "sony"]
   },
   {
@@ -42,6 +46,7 @@
     "precio": 22000,
     "descripcion": "Juego de cartas y creatividad para 3-6 jugadores.",
     "imagen": "JM003_dixit.jpg",
+    "destacado": true,
     "tags": ["creatividad", "familiar", "6 jugadores"]
   }
 ]

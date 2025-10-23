@@ -131,6 +131,12 @@ nav a.active{ color:var(--accent) }
 }
 .btn-outline:hover{ border-color:#555 }
 
+/* botones productos */
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0 1rem}
+.chip{background:#0f0f0f;border:1px solid #222;color:#ddd;padding:.35rem .7rem;border-radius:999px;cursor:pointer}
+.chip:hover{border-color:#444}
+
+
 /* =========================================================
    6) Utilidades
 ========================================================= */

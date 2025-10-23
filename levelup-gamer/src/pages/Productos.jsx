@@ -40,6 +40,12 @@ export default function Productos() {
   return (
     <section className="container">
       <h1>Productos</h1>
+      <div className="chips">
+          <button className="chip">Todos</button>
+          <button className="chip">Juego de Mesa</button>
+          <button className="chip">Consola</button>
+          <button className="chip">Accesorio</button>
+      </div>
       <ul className="grid" style={{ listStyle: "none", padding: 0 }}>
         {productos.map((p) => (
           <li key={p.id}><TarjetaProducto p={p} /></li>
