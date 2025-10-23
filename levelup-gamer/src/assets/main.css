@@ -1,35 +1,77 @@
+/* =========================================================
+   1) Variables (tema)
+========================================================= */
 :root{
   --bg:#000000;
   --fg:#ffffff;
   --muted:#d3d3d3;
-  --accent:#1E90FF;  /* azul eléctrico */
-  --accent-2:#39FF14;/* verde neón */
+  --accent:#1E90FF;   /* azul eléctrico */
+  --accent-2:#39FF14; /* verde neón */
 }
 
-/* toca ordenar todo esto despues */
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:Roboto, system-ui, sans-serif}
-.container{max-width:1080px;margin:auto;padding:1rem}
-header, footer{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
-nav a{color:var(--muted);margin:0 .75rem;text-decoration:none}
-nav a.active{color:var(--accent)}
-h1,h2,h3{font-family:Orbitron, Roboto, sans-serif}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
-.card{border:1px solid #222;padding:1rem;border-radius:12px;background:#0a0a0a}
-button{background:var(--accent);color:#000;padding:.6rem 1rem;border:none;border-radius:10px;cursor:pointer}
-button:hover{filter:brightness(1.1)}
-.stack{display:grid;gap:.75rem;max-width:420px}
-input{width:100%;padding:.6rem;border-radius:8px;border:1px solid #333;background:#0d0d0d;color:var(--fg)}
-.brand a{font-weight:800;color:var(--accent-2);text-decoration:none;font-family:Orbitron, sans-serif}
-.card-img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px}
-.muted{color:#d3d3d3}
-.price{font-weight:700;margin:.25rem 0}
-.btn{display:inline-block;background:var(--accent);color:#000;padding:.5rem .9rem;border-radius:10px;text-decoration:none}
-hr{border:none;border-top:1px solid #222;margin:1rem 0}
+/* =========================================================
+   2) Reset & Base
+========================================================= */
+*{ box-sizing:border-box }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:Roboto, system-ui, sans-serif;
+}
+h1,h2,h3{ font-family:Orbitron, Roboto, sans-serif }
+hr{ border:none; border-top:1px solid #222; margin:1rem 0 }
 
+/* Elementos base accesibles y sin choques con .btn */
+button{
+  background:none;
+  color:inherit;
+  border:none;
+  padding:0;
+  font:inherit;
+  cursor:pointer;
+}
+input{
+  width:100%;
+  padding:.6rem;
+  border-radius:8px;
+  border:1px solid #333;
+  background:#0d0d0d;
+  color:var(--fg);
+}
 
+/* =========================================================
+   3) Layout & Navegación
+========================================================= */
+.container{ max-width:1080px; margin:auto; padding:1rem }
+header, footer{
+  display:flex; align-items:center; justify-content:space-between; padding:1rem 0;
+}
+nav a{ color:var(--muted); margin:0 .75rem; text-decoration:none }
+nav a.active{ color:var(--accent) }
 
+/* Grillas / Stacks */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(220px,1fr));
+  gap:1rem;
+}
+.stack{ display:grid; gap:.75rem; max-width:420px }
 
+/* =========================================================
+   4) Componentes
+========================================================= */
+.card{
+  border:1px solid #222; padding:1rem; border-radius:12px; background:#0a0a0a;
+}
+.card-img{
+  width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:10px;
+}
+.brand a{
+  font-weight:800; color:var(--accent-2); text-decoration:none; font-family:Orbitron, sans-serif;
+}
+
+/* Badge / Chips */
 .badge-duoc{
   display:inline-block;
   font-size:.8rem;
@@ -40,11 +82,57 @@ hr{border:none;border-top:1px solid #222;margin:1rem 0}
   font-weight:800;
 }
 .user-chip{
-  background:#0f0f0f;border:1px solid #222;padding:.25rem .6rem;border-radius:999px
+  background:#0f0f0f; border:1px solid #222; padding:.25rem .6rem; border-radius:999px;
 }
+
+/* Carrito */
+.cart-link{ position:relative; padding-right:.6rem }
+.cart-badge{
+  position:absolute; top:-6px; right:-10px;
+  background:var(--accent-2); color:#031b03; font-weight:800;
+  border-radius:999px; padding:.1rem .4rem; font-size:.75rem;
+}
+
+/* Hero */
+.hero{
+  min-height:48vh; display:grid; place-items:center;
+  background:radial-gradient(60% 80% at 50% 20%, #0f1c2b 0%, #050607 60%);
+  border-bottom:1px solid #111;
+}
+.hero-inner{ text-align:center; padding:3rem 1rem }
+.hero h1{ font-family:Orbitron,sans-serif; font-size:clamp(2rem,7vw,3.5rem); margin:.2em 0 }
+.hero p{ color:#c9d1d9; margin:.2em 0 1em }
+.hero-cta{ display:flex; gap:.6rem; justify-content:center }
+
+.section-title{ font-size:1.25rem; margin:1rem 0 }
+
+/* =========================================================
+   5) Botones (unificados)
+========================================================= */
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:#000;
+  padding:.7rem 1rem;
+  border:none;
+  border-radius:12px;
+  text-decoration:none;
+}
+.btn:hover{ filter:brightness(1.1) }
+
 .btn-outline{
-  background:transparent;color:var(--fg);
-  border:1px solid #333;border-radius:10px;
-  padding:.4rem .8rem;cursor:pointer
+  display:inline-block;
+  background:transparent;
+  color:#fff;
+  border:1px solid #333;
+  border-radius:12px;
+  padding:.7rem 1rem;
+  text-decoration:none;
 }
-.btn-outline:hover{border-color:#555}
+.btn-outline:hover{ border-color:#555 }
+
+/* =========================================================
+   6) Utilidades
+========================================================= */
+.muted{ color:var(--muted) }
+.price{ font-weight:700; margin:.25rem 0 }

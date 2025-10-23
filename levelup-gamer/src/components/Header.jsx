@@ -28,7 +28,8 @@ export default function Header() {
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/productos">Productos</NavLink>
         <NavLink to="/login">Login</NavLink>
-        <NavLink to="/cart">Carrito 🛒 {count}</NavLink>
+        <NavLink to="/cart">Carrito 🛒 <span className="cart-badge">{count}</span></NavLink>
+        
       </nav>
 
       <div style={{display:"flex", alignItems:"center", gap:".5rem"}}>
