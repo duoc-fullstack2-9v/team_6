@@ -26,3 +26,25 @@ input{width:100%;padding:.6rem;border-radius:8px;border:1px solid #333;backgroun
 .price{font-weight:700;margin:.25rem 0}
 .btn{display:inline-block;background:var(--accent);color:#000;padding:.5rem .9rem;border-radius:10px;text-decoration:none}
 hr{border:none;border-top:1px solid #222;margin:1rem 0}
+
+
+
+
+.badge-duoc{
+  display:inline-block;
+  font-size:.8rem;
+  background:linear-gradient(90deg, var(--accent-2), #6bff5a);
+  color:#031b03;
+  padding:.25rem .5rem;
+  border-radius:999px;
+  font-weight:800;
+}
+.user-chip{
+  background:#0f0f0f;border:1px solid #222;padding:.25rem .6rem;border-radius:999px
+}
+.btn-outline{
+  background:transparent;color:var(--fg);
+  border:1px solid #333;border-radius:10px;
+  padding:.4rem .8rem;cursor:pointer
+}
+.btn-outline:hover{border-color:#555}

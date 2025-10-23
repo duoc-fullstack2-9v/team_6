@@ -1,8 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useAuth } from "../context/auth.jsx";
 
 export default function Header() {
   const [count, setCount] = useState(0);
+  const { usuario, logout } = useAuth();
 
   useEffect(() => {
     const update = () => {
@@ -14,19 +16,32 @@ export default function Header() {
     return () => window.removeEventListener("storage", update);
   }, []);
 
+  const saludo = usuario?.nombre || usuario?.email;
+
   return (
-    <header className="container">
+    <header className="container" style={{gap:"1rem"}}>
       <div className="brand">
         <Link to="/">LEVEL-UP GAMER</Link>
       </div>
-      <nav>
+
+      <nav style={{display:"flex", alignItems:"center", gap:".75rem"}}>
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/productos">Productos</NavLink>
         <NavLink to="/login">Login</NavLink>
-        <NavLink to="/cart">Carrito</NavLink>
-
-        <span style={{ marginLeft: "1rem" }}>🛒 {count}</span>
+        <NavLink to="/cart">Carrito 🛒 {count}</NavLink>
       </nav>
+
+      <div style={{display:"flex", alignItems:"center", gap:".5rem"}}>
+        {usuario ? (
+          <>
+            {usuario.duoc20 && <span className="badge-duoc">DUOC 20%</span>}
+            <span className="user-chip">Hola, {saludo}</span>
+            <button className="btn-outline" onClick={logout}>Cerrar sesión</button>
+          </>
+        ) : (
+          <small className="muted">No has iniciado sesión</small>
+        )}
+      </div>
     </header>
   );
 }
