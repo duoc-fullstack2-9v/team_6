@@ -95,9 +95,28 @@ nav a.active{ color:var(--accent) }
 
 /* Hero */
 .hero{
-  min-height:48vh; display:grid; place-items:center;
-  background:radial-gradient(60% 80% at 50% 20%, #0f1c2b 0%, #050607 60%);
+  position:relative;
+  min-height:48vh;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
   border-bottom:1px solid #111;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("../assets/img/fondo.jpg") center/cover no-repeat;
+  filter:blur(6px) brightness(0.4);
+  z-index:0;
+}
+
+.hero-inner{
+  position:relative;
+  z-index:1;
+  text-align:center;
+  padding:3rem 1rem;
 }
 .hero-inner{ text-align:center; padding:3rem 1rem }
 .hero h1{ font-family:Orbitron,sans-serif; font-size:clamp(2rem,7vw,3.5rem); margin:.2em 0 }
@@ -137,9 +156,9 @@ nav a.active{ color:var(--accent) }
 .chip:hover{border-color:#444}
 
 
-/* =========================================================
+/* 
    6) Utilidades
-========================================================= */
+ */
 .muted{ color:var(--muted) }
 .price{ font-weight:700; margin:.25rem 0 }
 

@@ -9,3 +9,7 @@ export default defineConfig({
     setupFiles: './src/setupTests.js'
   }
 })
+
+
+
+//mejorar el orden de componentes, comentar el codigo, 
