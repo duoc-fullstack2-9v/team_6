@@ -172,3 +172,11 @@ nav a.active{ color:var(--accent) }
 .auth-actions{display:flex;justify-content:space-between;gap:.5rem;margin-top:.75rem}
 .auth-note{color:#c9c9c9;font-size:.9rem;text-align:center;margin-top:.5rem}
 
+
+/* del filtro*/
+.chip-active{
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+  font-weight: 700;
+}

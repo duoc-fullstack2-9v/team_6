@@ -4,50 +4,36 @@ import TarjetaProducto from "../components/TarjetaProducto.jsx";
 
 export default function Productos() {
   const [productos, setProductos] = useState([]);
-  const [error, setError] = useState("");
+  const [filtro, setFiltro] = useState("Todos");
 
   useEffect(() => {
-    try {
-      if (!Array.isArray(productosData)) {
-        throw new Error("El archivo productos.json no contiene un array.");
-      }
-      productosData.forEach((p, i) => {
-        const id = p.id;
-        const name = p.nombre || p.name;
-        const price = typeof p.precio === "number" ? p.precio : p.price;
-        if (!id || !name || typeof price !== "number") {
-          throw new Error(`Producto inválido en índice ${i} (id/nombre/precio).`);
-        }
-      });
-      setProductos(productosData);
-      setError("");
-    } catch (e) {
-      console.error(e);
-      setError(e.message || "Error al cargar productos.");
-    }
+    setProductos(productosData);
   }, []);
 
-  if (error) {
-    return (
-      <section className="container">
-        <h1>Productos</h1>
-        <p style={{color:"#f66"}}>⚠️ {error}</p>
-        <p>Revisa que el JSON esté bien formado y sin comas de más.</p>
-      </section>
-    );
-  }
+  const categorias = ["Todos", ...new Set(productosData.map(p => p.categoria))];
+
+  const filtrados = filtro === "Todos"
+    ? productos
+    : productos.filter(p => p.categoria === filtro);
 
   return (
     <section className="container">
       <h1>Productos</h1>
+
       <div className="chips">
-          <button className="chip">Todos</button>
-          <button className="chip">Juego de Mesa</button>
-          <button className="chip">Consola</button>
-          <button className="chip">Accesorio</button>
+        {categorias.map(cat => (
+          <button
+            key={cat}
+            className={`chip ${filtro === cat ? "chip-active" : ""}`}
+            onClick={() => setFiltro(cat)}
+          >
+            {cat}
+          </button>
+        ))}
       </div>
+
       <ul className="grid" style={{ listStyle: "none", padding: 0 }}>
-        {productos.map((p) => (
+        {filtrados.map(p => (
           <li key={p.id}><TarjetaProducto p={p} /></li>
         ))}
       </ul>
