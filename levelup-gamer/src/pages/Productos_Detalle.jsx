@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import productosData from "../data/productos.json";
+import { useToast} from "../components/Toast.jsx"
 
 function imgUrl(nombreArchivo){
   if (!nombreArchivo) return "https://via.placeholder.com/800?text=Producto";
@@ -10,6 +11,7 @@ function imgUrl(nombreArchivo){
 export default function Productos_Detalle() {
   const { id } = useParams();
   const [p, setP] = useState(null);
+  const { toast } = useToast();
 
   useEffect(() => {
     setP(productosData.find(x => x.id === id) || null);
@@ -25,7 +27,7 @@ export default function Productos_Detalle() {
     else cart.push({ id, name, price, qty: 1 });
     localStorage.setItem("cart", JSON.stringify(cart));
     window.dispatchEvent(new StorageEvent("storage"));
-    alert("Agregado al carrito");
+    toast("Agregado al carrito");
   };
 
   if (!p) return <section className="container">Cargando…</section>;
