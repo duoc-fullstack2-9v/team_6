@@ -12,14 +12,32 @@ export default function Productos() {
 
   const categorias = ["Todos", ...new Set(productosData.map(p => p.categoria))];
 
-  const filtrados = filtro === "Todos"
+  const [busqueda, setBusqueda]= useState("");
+
+  const porCategoria = filtro === "Todos"
     ? productos
     : productos.filter(p => p.categoria === filtro);
 
+  const filtrados = porCategoria.filter(p => {
+    const texto = busqueda.toLowerCase();
+    return(
+      p.nombre.toLowerCase().includes(texto) ||
+      p.tags.some(tag=> tag.toLowerCase().includes(texto))
+    );
+  });
+
+  
   return (
     <section className="container">
       <h1>Productos</h1>
-
+      <input
+        type="text"
+        placeholder="Buscar productos..."
+        className="input-busqueda"
+        value={busqueda}
+        onChange={(e) => setBusqueda(e.target.value)}
+        style={{marginBottom: "1rem"}}
+    />
       <div className="chips">
         {categorias.map(cat => (
           <button
