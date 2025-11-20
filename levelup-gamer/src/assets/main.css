@@ -94,29 +94,31 @@ nav a.active{ color:var(--accent) }
 }
 
 /* Hero */
-.hero{
-  position:relative;
-  min-height:48vh;
-  display:grid;
-  place-items:center;
-  overflow:hidden;
-  border-bottom:1px solid #111;
+.hero {
+  position: relative;
+  min-height: 48vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid #111;
 }
 
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:url("../assets/img/fondo.jpg") center/cover no-repeat;
-  filter:blur(6px) brightness(0.4);
-  z-index:0;
+/* Fondo borroso */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/imagenes/fondo.jpg") center/cover no-repeat;
+  filter: blur(6px) brightness(0.4);
+  z-index: 0;
 }
 
-.hero-inner{
-  position:relative;
-  z-index:1;
-  text-align:center;
-  padding:3rem 1rem;
+/* Contenido encima del fondo */
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 3rem 1rem;
 }
 .hero-inner{ text-align:center; padding:3rem 1rem }
 .hero h1{ font-family:Orbitron,sans-serif; font-size:clamp(2rem,7vw,3.5rem); margin:.2em 0 }
