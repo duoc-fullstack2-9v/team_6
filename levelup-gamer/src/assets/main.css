@@ -222,3 +222,31 @@ nav a.active{ color:var(--accent) }
 }
 
 
+/* Arreglos al footer*/
+.footer{
+  margin-top:3rem;
+  padding:2rem 1rem;
+  background:#0a0a0a;
+  border-top:1px solid #111;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:1rem;
+}
+
+.footer-col h4{
+  margin-bottom:.5rem;
+  font-size:1rem;
+  color:var(--accent);
+}
+
+.footer-col a{
+  display:block;
+  color:#ccc;
+  text-decoration:none;
+  margin:.25rem 0;
+}
+
+.footer-col a:hover{
+  color:var(--accent);
+}
+
