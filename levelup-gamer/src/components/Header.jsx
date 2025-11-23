@@ -26,15 +26,12 @@ export default function Header() {
       </div>
 
       {/* NAV IZQUIERDO */}
-      <nav style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-        <NavLink to="/" end>Home</NavLink>
-        <NavLink to="/productos">Productos</NavLink>
+      <NavLink to="/" end className="nav-btn">Home</NavLink>
+      <NavLink to="/productos" className="nav-btn">Productos</NavLink>
 
-        {/* CARRITO (único botón) */}
-        <NavLink to="/cart" className="cart-link">
-          🛒 <span className="cart-badge">{count}</span>
-        </NavLink>
-      </nav>
+      <NavLink to="/cart" className="nav-btn cart-link">
+        🛒 <span className="cart-badge">{count}</span>
+      </NavLink>
 
       {/* NAV DERECHO (LOGIN / USER) */}
       <div style={{ display: "flex", alignItems: "center", gap: ".5rem" }}>
@@ -46,8 +43,8 @@ export default function Header() {
           </>
         ) : (
           <>
-            <NavLink to="/login">Login</NavLink>
-            <NavLink to="/register">Registro</NavLink>
+            <NavLink to="/login" className="nav-btn">Login</NavLink>
+            <NavLink to="/register" className="nav-btn">Registro</NavLink>
           </>
         )}
       </div>

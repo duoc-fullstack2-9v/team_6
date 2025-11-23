@@ -42,12 +42,16 @@ export default function Productos_Detalle() {
     <section className="container">
       <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"1rem"}}>
         <img src={img} alt={name} className="detalle-imagen" />
-        <div>
-          <h1>{name}</h1>
-          <p className="muted">{category}</p>
-          <p>{description}</p>
-          <p className="price">${price.toLocaleString("es-CL")}</p>
-          <button onClick={agregar}>Añadir al carrito</button>
+        <div className="detalle-card">
+          <h1 className="detalle-titulo">{name}</h1>
+          <span className="detalle-tag">{category}</span>
+          <p className="detalle-descripcion">{description}</p>
+          <p className="detalle-precio">
+            ${price.toLocaleString("es-CL")}
+          </p>
+          <button className="btn-detalle" onClick={agregar}>
+            Añadir al carrito 🛒
+          </button>
         </div>
       </div>
     </section>
