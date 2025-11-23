@@ -24,13 +24,18 @@ export default function Header() {
         <Link to="/">LEVEL-UP GAMER</Link>
       </div>
 
-      <nav style={{display:"flex", alignItems:"center", gap:".75rem"}}>
+      <nav style={{display:"flex", alignItems:"center", gap:"1rem"}}>
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/productos">Productos</NavLink>
-        <NavLink to="/login">Login</NavLink>
-        <NavLink to="/cart">Carrito 🛒 <span className="cart-badge">{count}</span></NavLink>
+
         
+        <NavLink to="/cart" className="cart-link">
+          🛒 <span className="cart-badge">{count}</span>
+        </NavLink>
+
+        <NavLink to="/login">Login</NavLink>
       </nav>
+
 
       <div style={{display:"flex", alignItems:"center", gap:".5rem"}}>
       {usuario ? (

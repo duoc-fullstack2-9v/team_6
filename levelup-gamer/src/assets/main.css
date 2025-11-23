@@ -86,12 +86,23 @@ nav a.active{ color:var(--accent) }
 }
 
 /* Carrito */
-.cart-link{ position:relative; padding-right:.6rem }
-.cart-badge{
-  position:absolute; top:-6px; right:-10px;
-  background:var(--accent-2); color:#031b03; font-weight:800;
-  border-radius:999px; padding:.1rem .4rem; font-size:.75rem;
+.cart-link{
+  position:relative;
+  padding-right:.6rem;
 }
+
+.cart-badge{
+  position:absolute;
+  top:-6px;
+  right:-10px;
+  background:var(--accent-2);
+  color:#031b03;
+  font-weight:800;
+  border-radius:999px;
+  padding:.1rem .4rem;
+  font-size:.75rem;
+}
+
 
 /* Hero */
 .hero {
