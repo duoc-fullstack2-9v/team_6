@@ -19,39 +19,38 @@ export default function Header() {
   const saludo = usuario?.nombre || usuario?.email;
 
   return (
-    <header className="container" style={{gap:"1rem"}}>
+    <header className="container" style={{ gap: "1rem" }}>
+      {/* LOGO */}
       <div className="brand">
         <Link to="/">LEVEL-UP GAMER</Link>
       </div>
 
-      <nav style={{display:"flex", alignItems:"center", gap:"1rem"}}>
+      {/* NAV IZQUIERDO */}
+      <nav style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/productos">Productos</NavLink>
 
-        
+        {/* CARRITO (único botón) */}
         <NavLink to="/cart" className="cart-link">
           🛒 <span className="cart-badge">{count}</span>
         </NavLink>
-
-        <NavLink to="/login">Login</NavLink>
       </nav>
 
-
-      <div style={{display:"flex", alignItems:"center", gap:".5rem"}}>
-      {usuario ? (
-        <>
-          {usuario.duoc20 && <span className="badge-duoc">DUOC 20%</span>}
-          <span className="user-chip">Hola, {usuario.nombre || usuario.email}</span>
-          <button className="btn-outline" onClick={logout}>Cerrar sesión</button>
-        </>
-      ) : (
-        <>
-          <NavLink to="/login">Login</NavLink>
-          <NavLink to="/register">Registro</NavLink>
-        </>
-      )}
-    </div>
-
+      {/* NAV DERECHO (LOGIN / USER) */}
+      <div style={{ display: "flex", alignItems: "center", gap: ".5rem" }}>
+        {usuario ? (
+          <>
+            {usuario.duoc20 && <span className="badge-duoc">DUOC 20%</span>}
+            <span className="user-chip">Hola, {saludo}</span>
+            <button className="btn-outline" onClick={logout}>Cerrar sesión</button>
+          </>
+        ) : (
+          <>
+            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/register">Registro</NavLink>
+          </>
+        )}
+      </div>
     </header>
   );
 }
