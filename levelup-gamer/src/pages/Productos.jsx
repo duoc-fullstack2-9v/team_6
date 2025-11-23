@@ -50,11 +50,17 @@ export default function Productos() {
         ))}
       </div>
 
-      <ul className="grid" style={{ listStyle: "none", padding: 0 }}>
-        {filtrados.map(p => (
-          <li key={p.id}><TarjetaProducto p={p} /></li>
-        ))}
-      </ul>
+        {filtrados.length === 0 ? (
+          <p style={{ padding: "1rem 0", opacity: .7 }}>
+            No se encontraron productos con los criterios seleccionados.
+          </p>
+        ) : (
+          <ul className="grid" style={{ listStyle: "none", padding: 0 }}>
+            {filtrados.map(p => (
+              <li key={p.id}><TarjetaProducto p={p} /></li>
+            ))}
+          </ul>
+        )}
     </section>
   );
 }
