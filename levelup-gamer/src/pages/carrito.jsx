@@ -1,9 +1,13 @@
 // src/pages/Cart.jsx
 import { useEffect, useState } from "react";
 import { useAuth } from "../context/auth.jsx";
+import { Navigate} from "react-router-dom";
+
+
 
 export default function Cart() {
   const { usuario } = useAuth();
+    if (!usuario) return <Navigate to="/login" replace />;
   const isDuoc = !!usuario?.duoc20;
   const [items, setItems] = useState([]);
 
