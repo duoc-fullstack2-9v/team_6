@@ -229,107 +229,107 @@
 
 
 
-  
+
 
   {
-  "id": "Juego1",
-  "categoria": "Juegos",
-  "nombre": "The Legend of Zelda: Tears of the Kingdom",
-  "precio": 59990,
-  "descripcion": "Secuela de Breath of the Wild con mundo abierto y nuevas habilidades.",
-  "imagen": "JG001_zelda_totk.jpg",
-  "destacado": true,
-  "tags": ["nintendo", "switch", "aventura", "open world"]
-},
-{
-  "id": "Juego2",
-  "categoria": "Juegos",
-  "nombre": "Mario Kart 8 Deluxe",
-  "precio": 49990,
-  "descripcion": "Carreras frenéticas con personajes clásicos de Nintendo.",
-  "imagen": "JG002_mariokart8.jpg",
-  "destacado": true,
-  "tags": ["nintendo", "switch", "carreras", "multijugador"]
-},
-{
-  "id": "Juego3",
-  "categoria": "Juegos",
-  "nombre": "Super Smash Bros Ultimate",
-  "precio": 59990,
-  "descripcion": "El crossover de peleas más grande con más de 70 personajes.",
-  "imagen": "JG003_smashbros.jpg",
-  "destacado": true,
-  "tags": ["nintendo", "switch", "peleas", "multijugador"]
-},
-{
-  "id": "Juego4",
-  "categoria": "Juegos",
-  "nombre": "God of War: Ragnarök",
-  "precio": 59990,
-  "descripcion": "Kratos y Atreus enfrentan el fin de los tiempos en la mitología nórdica.",
-  "imagen": "JG004_gow_ragnarok.jpg",
-  "destacado": true,
-  "tags": ["ps5", "sony", "accion", "aventura"]
-},
-{
-  "id": "Juego5",
-  "categoria": "Juegos",
-  "nombre": "Marvel's Spider-Man 2",
-  "precio": 69990,
-  "descripcion": "Peter Parker y Miles Morales unen fuerzas en este mundo abierto de Nueva York.",
-  "imagen": "JG005_spiderman2.jpg",
-  "destacado": true,
-  "tags": ["ps5", "sony", "accion", "open world"]
-},
-{
-  "id": "Juego6",
-  "categoria": "Juegos",
-  "nombre": "The Last of Us Part I",
-  "precio": 54990,
-  "descripcion": "Remake del aclamado juego de supervivencia emocional de Naughty Dog.",
-  "imagen": "JG006_tlou1.jpg",
-  "destacado": true,
-  "tags": ["ps5", "sony", "accion", "historia"]
-},
-{
-  "id": "Juego7",
-  "categoria": "Juegos",
-  "nombre": "Halo Infinite",
-  "precio": 49990,
-  "descripcion": "El Jefe Maestro regresa en una aventura de mundo semiabierto.",
-  "imagen": "JG007_halo_infinite.jpg",
-  "destacado": true,
-  "tags": ["xbox", "shooter", "accion"]
-},
-{
-  "id": "Juego8",
-  "categoria": "Juegos",
-  "nombre": "Forza Horizon 5",
-  "precio": 59990,
-  "descripcion": "Explora México en este espectacular juego de carreras de mundo abierto.",
-  "imagen": "JG008_forza5.jpg",
-  "destacado": true,
-  "tags": ["xbox", "carreras", "mundo abierto"]
-},
-{
-  "id": "Juego9",
-  "categoria": "Juegos",
-  "nombre": "Gears 5",
-  "precio": 39990,
-  "descripcion": "Acción intensa y narrativa profunda en la saga Gears of War.",
-  "imagen": "JG009_gears5.jpg",
-  "destacado": true,
-  "tags": ["xbox", "shooter", "accion"]
-},
-{
-  "id": "Juego10",
-  "categoria": "Juegos",
-  "nombre": "Elden Ring",
-  "precio": 59990,
-  "descripcion": "El aclamado RPG de mundo abierto creado por FromSoftware.",
-  "imagen": "JG010_eldenring.jpg",
-  "destacado": true,
-  "tags": ["rpg", "open world", "accion", "multiplataforma"]
-}
+    "id": "Juego1",
+    "categoria": "Juegos",
+    "nombre": "The Legend of Zelda: Tears of the Kingdom",
+    "precio": 59990,
+    "descripcion": "Secuela de Breath of the Wild con mundo abierto y nuevas habilidades.",
+    "imagen": "JG001_zelda_totk.jpg",
+    "destacado": true,
+    "tags": ["nintendo", "switch", "aventura", "open world"]
+  },
+  {
+    "id": "Juego2",
+    "categoria": "Juegos",
+    "nombre": "Mario Kart 8 Deluxe",
+    "precio": 49990,
+    "descripcion": "Carreras frenéticas con personajes clásicos de Nintendo.",
+    "imagen": "JG002_mariokart8.jpg",
+    "destacado": true,
+    "tags": ["nintendo", "switch", "carreras", "multijugador"]
+  },
+  {
+    "id": "Juego3",
+    "categoria": "Juegos",
+    "nombre": "Super Smash Bros Ultimate",
+    "precio": 59990,
+    "descripcion": "El crossover de peleas más grande con más de 70 personajes.",
+    "imagen": "JG003_smashbros.jpg",
+    "destacado": true,
+    "tags": ["nintendo", "switch", "peleas", "multijugador"]
+  },
+  {
+    "id": "Juego4",
+    "categoria": "Juegos",
+    "nombre": "God of War: Ragnarök",
+    "precio": 59990,
+    "descripcion": "Kratos y Atreus enfrentan el fin de los tiempos en la mitología nórdica.",
+    "imagen": "JG004_gow_ragnarok.jpg",
+    "destacado": true,
+    "tags": ["ps5", "sony", "accion", "aventura"]
+  },
+  {
+    "id": "Juego5",
+    "categoria": "Juegos",
+    "nombre": "Marvel's Spider-Man 2",
+    "precio": 69990,
+    "descripcion": "Peter Parker y Miles Morales unen fuerzas en este mundo abierto de Nueva York.",
+    "imagen": "JG005_spiderman2.jpg",
+    "destacado": true,
+    "tags": ["ps5", "sony", "accion", "open world"]
+  },
+  {
+    "id": "Juego6",
+    "categoria": "Juegos",
+    "nombre": "The Last of Us Part I",
+    "precio": 54990,
+    "descripcion": "Remake del aclamado juego de supervivencia emocional de Naughty Dog.",
+    "imagen": "JG006_tlou1.jpg",
+    "destacado": true,
+    "tags": ["ps5", "sony", "accion", "historia"]
+  },
+  {
+    "id": "Juego7",
+    "categoria": "Juegos",
+    "nombre": "Halo Infinite",
+    "precio": 49990,
+    "descripcion": "El Jefe Maestro regresa en una aventura de mundo semiabierto.",
+    "imagen": "JG007_halo_infinite.jpg",
+    "destacado": true,
+    "tags": ["xbox", "shooter", "accion"]
+  },
+  {
+    "id": "Juego8",
+    "categoria": "Juegos",
+    "nombre": "Forza Horizon 5",
+    "precio": 59990,
+    "descripcion": "Explora México en este espectacular juego de carreras de mundo abierto.",
+    "imagen": "JG008_forza5.jpg",
+    "destacado": true,
+    "tags": ["xbox", "carreras", "mundo abierto"]
+  },
+  {
+    "id": "Juego9",
+    "categoria": "Juegos",
+    "nombre": "Gears 5",
+    "precio": 39990,
+    "descripcion": "Acción intensa y narrativa profunda en la saga Gears of War.",
+    "imagen": "JG009_gears5.jpg",
+    "destacado": true,
+    "tags": ["xbox", "shooter", "accion"]
+  },
+  {
+    "id": "Juego10",
+    "categoria": "Juegos",
+    "nombre": "Elden Ring",
+    "precio": 59990,
+    "descripcion": "El aclamado RPG de mundo abierto creado por FromSoftware.",
+    "imagen": "JG010_eldenring.jpg",
+    "destacado": true,
+    "tags": ["rpg", "open world", "accion", "multiplataforma"]
+  }
 
 ]

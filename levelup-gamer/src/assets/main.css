@@ -261,3 +261,17 @@ nav a.active{ color:var(--accent) }
   color:var(--accent);
 }
 
+
+
+/* arreglo de imagenes en detalle producto*/
+.detalle-imagen {
+  width: 100%;
+  max-width: 380px;
+  height: 380px;
+  object-fit: contain;
+  background: #111;
+  border-radius: 12px;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+}

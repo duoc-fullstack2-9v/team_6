@@ -41,7 +41,7 @@ export default function Productos_Detalle() {
   return (
     <section className="container">
       <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"1rem"}}>
-        <img src={img} alt={name} style={{width:"100%", borderRadius:12}} />
+        <img src={img} alt={name} className="detalle-imagen" />
         <div>
           <h1>{name}</h1>
           <p className="muted">{category}</p>
