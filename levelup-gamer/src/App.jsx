@@ -8,6 +8,7 @@ import Productos_Detalle from "./pages/Productos_Detalle.jsx";
 import Login from "./pages/Login.jsx";
 import Cart from "./pages/carrito.jsx";
 import Register from "./pages/Registro.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
   return (
@@ -21,6 +22,8 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/register" element={<Register />} />
+          <Route path="*" element={<NotFound />} />
+
         </Routes>
       </main>
       <Footer />
