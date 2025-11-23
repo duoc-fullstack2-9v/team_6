@@ -377,3 +377,21 @@ nav a.active{ color:var(--accent) }
   padding: .1rem .4rem;
   font-size: .75rem;
 }
+
+
+/* boton para volver del detaller producto */
+.btn-volver {
+  margin-top: .5rem;
+  display: inline-block;
+  padding: .5rem 1rem;
+  color: #ccc;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: .2s ease;
+}
+
+.btn-volver:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

@@ -52,6 +52,9 @@ export default function Productos_Detalle() {
           <button className="btn-detalle" onClick={agregar}>
             Añadir al carrito 🛒
           </button>
+          <a href="/productos" className="btn-volver">
+            ← Volver a productos
+          </a>
         </div>
       </div>
     </section>
