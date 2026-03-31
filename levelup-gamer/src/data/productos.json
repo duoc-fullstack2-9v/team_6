@@ -1,0 +1,335 @@
+[
+  {
+    "id": "JuegoMesa1",
+    "categoria": "Juego de Mesa",
+    "nombre": "Catan",
+    "precio": 30000,
+    "descripcion": "Juego de estrategia para 3-4 jugadores.",
+    "imagen": "JM001_catan.jpg",
+    "destacado": true,
+    "tags": ["estrategia", "familiar", "3-4 jugadores"]
+  },
+  {
+    "id": "JuegoMesa2",
+    "categoria": "Juego de Mesa",
+    "nombre": "Carcassonne",
+    "precio": 25000,
+    "descripcion": "Juego de colocación de losetas para 2-5 jugadores.",
+    "imagen": "JM002_carcassone.jpg",
+    "destacado": true,
+    "tags": ["colocación", "familiar", "5 jugadores"]
+  },
+  {
+    "id": "JuegoMesa3",
+    "categoria": "Juego de Mesa",
+    "nombre": "Dixit",
+    "precio": 22000,
+    "descripcion": "Juego de cartas y creatividad para 3-6 jugadores.",
+    "imagen": "JM003_dixit.jpg",
+    "destacado": true,
+    "tags": ["creatividad", "familiar", "6 jugadores"]
+  },
+  {
+    "id": "JuegoMesa4",
+    "categoria": "Juego de Mesa",
+    "nombre": "UNO",
+    "precio": 8990,
+    "descripcion": "Clásico juego de cartas donde debes combinar colores y números para ganar.",
+    "imagen": "JM004_uno.jpg",
+    "destacado": true,
+    "tags": ["cartas", "familiar", "rápido"]
+  },
+  {
+    "id": "JuegoMesa5",
+    "categoria": "Juego de Mesa",
+    "nombre": "Monopoly",
+    "precio": 24990,
+    "descripcion": "Juego clásico de estrategia económica donde compras propiedades y construyes un imperio.",
+    "imagen": "JM005_monopoly.jpg",
+    "destacado": true,
+    "tags": ["estrategia", "familia", "clasico"]
+  },
+
+
+
+
+
+  {
+    "id": "Accesorio1",
+    "categoria": "Accesorio",
+    "nombre": "Control inalambrico Xbox Series X",
+    "precio": 60000,
+    "descripcion": "Control inalambrico para Xbox Series X.",
+    "imagen": "AC001_control_xbox.jpg",
+    "destacado": true,
+    "tags": ["accesorio", "gaming", "xbox", "control"]
+  },
+  {
+    "id": "Accesorio2",
+    "categoria": "Accesorio",
+    "nombre": "Control Inalámbrico DualSense PS5",
+    "precio": 65000,
+    "descripcion": "Control oficial DualSense para PlayStation 5, con vibración háptica y gatillos adaptativos.",
+    "imagen": "AC002_dualsense_ps5.jpg",
+    "destacado": true,
+    "tags": ["accesorio", "gaming", "ps5", "control"]
+  },
+  {
+    "id": "Accesorio3",
+    "categoria": "Accesorio",
+    "nombre": "Joy-Con Nintendo Switch",
+    "precio": 79990,
+    "descripcion": "Set de Joy-Con derecho e izquierdo para Nintendo Switch, compatibles con modo portátil y multijugador.",
+    "imagen": "AC003_joycon_switch.jpg",
+    "destacado": true,
+    "tags": ["accesorio", "gaming", "switch", "joycon"]
+  },
+  {
+    "id": "Accesorio4",
+    "categoria": "Accesorio",
+    "nombre": "Audífonos Gamer Logitech USB",
+    "precio": 29990,
+    "descripcion": "Audífonos gamer Logitech con micrófono incorporado y conexión USB, sonido claro y cómodo.",
+    "imagen": "AC004_logitech_usb.jpg",
+    "destacado": true,
+    "tags": ["accesorio", "gaming", "logitech", "audifonos"]
+  },
+  {
+    "id": "Accesorio5",
+    "categoria": "Accesorio",
+    "nombre": "Set Gamer Teclado + Mouse RGB",
+    "precio": 19990,
+    "descripcion": "Set gamer con teclado retroiluminado RGB y mouse ergonómico, ideal para comenzar.",
+    "imagen": "AC005_set_teclado_mouse.jpg",
+    "destacado": true,
+    "tags": ["accesorio", "gaming", "teclado", "mouse", "rgb"]
+  },
+
+
+
+
+
+  {
+    "id": "Consola1",
+    "categoria": "Consola",
+    "nombre": "PlayStation5",
+    "precio": 550000,
+    "descripcion": "Consola de ultima generacion PlayStation5.",
+    "imagen": "CO001_ps5.jpg",
+    "destacado": true,
+    "tags": ["consola", "gaming", "ps5", "sony"]
+  },
+
+  {
+    "id": "Consola2",
+    "categoria": "Consola",
+    "nombre": "Xbox Series S",
+    "precio": 299990,
+    "descripcion": "Xbox Series S, consola digital de nueva generación con tiempos de carga ultrarrápidos.",
+    "imagen": "CO002_xbox_series_s.jpg",
+    "destacado": true,
+    "tags": ["consola", "gaming", "xbox", "series s"]
+  },
+
+  {
+    "id": "Consola3",
+    "categoria": "Consola",
+    "nombre": "Nintendo Switch",
+    "precio": 329990,
+    "descripcion": "Nintendo Switch versión estándar, consola híbrida para jugar en TV o en modo portátil.",
+    "imagen": "CO003_nswitch_v1.jpg",
+    "destacado": true,
+    "tags": ["consola", "gaming", "nintendo", "switch"]
+  },
+
+  {
+    "id": "Consola4",
+    "categoria": "Consola",
+    "nombre": "Nintendo Switch OLED",
+    "precio": 399990,
+    "descripcion": "Nintendo Switch OLED con pantalla más brillante y colores intensos.",
+    "imagen": "CO004_nswitch_oled.jpg",
+    "destacado": true,
+    "tags": ["consola", "gaming", "nintendo", "switch", "oled"]
+  },
+
+  {
+    "id": "Consola5",
+    "categoria": "Consola",
+    "nombre": "Xbox Series X",
+    "precio": 499990,
+    "descripcion": "Xbox Series X, la consola más poderosa de Microsoft con soporte 4K a 120 fps.",
+    "imagen": "CO005_xbox_series_x.jpg",
+    "destacado": true,
+    "tags": ["consola", "gaming", "xbox", "series x"]
+  },
+
+
+
+
+
+
+  {
+    "id": "Figura1",
+    "categoria": "Figuras",
+    "nombre": "Funko Pop Spider-Man",
+    "precio": 14990,
+    "descripcion": "Figura Funko Pop de Spider-Man en pose clásica.",
+    "imagen": "FG001_spiderman_funko.jpg",
+    "destacado": true,
+    "tags": ["figura", "funko", "marvel", "spiderman"]
+  },
+
+  {
+    "id": "Figura2",
+    "categoria": "Figuras",
+    "nombre": "Funko Pop Darth Vader",
+    "precio": 15990,
+    "descripcion": "Figura Funko Pop de Darth Vader con su icónico casco.",
+    "imagen": "FG002_darthvader_funko.jpg",
+    "destacado": true,
+    "tags": ["figura", "funko", "star wars", "vader"]
+  },
+
+  {
+    "id": "Figura3",
+    "categoria": "Figuras",
+    "nombre": "Funko Pop Goku Super Saiyajin",
+    "precio": 16990,
+    "descripcion": "Figura Funko Pop de Goku en modo Super Saiyajin.",
+    "imagen": "FG003_goku_funko.jpg",
+    "destacado": true,
+    "tags": ["figura", "funko", "dragon ball", "goku"]
+  },
+
+  {
+    "id": "Figura4",
+    "categoria": "Figuras",
+    "nombre": "Tanjiro Kamado – Demon Slayer",
+    "precio": 24990,
+    "descripcion": "Figura coleccionable de Tanjiro Kamado con espada Nichirin.",
+    "imagen": "FG004_tanjiro.jpg",
+    "destacado": true,
+    "tags": ["figura", "anime", "demon slayer", "tanjiro"]
+  },
+
+  {
+    "id": "Figura5",
+    "categoria": "Figuras",
+    "nombre": "Monkey D. Luffy – One Piece",
+    "precio": 23990,
+    "descripcion": "Figura coleccionable de Luffy en pose de combate.",
+    "imagen": "FG005_luffy.jpg",
+    "destacado": true,
+    "tags": ["figura", "anime", "one piece", "luffy"]
+  },
+
+
+
+
+
+
+
+
+  {
+    "id": "Juego1",
+    "categoria": "Juegos",
+    "nombre": "The Legend of Zelda: Tears of the Kingdom",
+    "precio": 59990,
+    "descripcion": "Secuela de Breath of the Wild con mundo abierto y nuevas habilidades.",
+    "imagen": "JG001_zelda_totk.jpg",
+    "destacado": true,
+    "tags": ["nintendo", "switch", "aventura", "open world"]
+  },
+  {
+    "id": "Juego2",
+    "categoria": "Juegos",
+    "nombre": "Mario Kart 8 Deluxe",
+    "precio": 49990,
+    "descripcion": "Carreras frenéticas con personajes clásicos de Nintendo.",
+    "imagen": "JG002_mariokart8.jpg",
+    "destacado": true,
+    "tags": ["nintendo", "switch", "carreras", "multijugador"]
+  },
+  {
+    "id": "Juego3",
+    "categoria": "Juegos",
+    "nombre": "Super Smash Bros Ultimate",
+    "precio": 59990,
+    "descripcion": "El crossover de peleas más grande con más de 70 personajes.",
+    "imagen": "JG003_smashbros.jpg",
+    "destacado": true,
+    "tags": ["nintendo", "switch", "peleas", "multijugador"]
+  },
+  {
+    "id": "Juego4",
+    "categoria": "Juegos",
+    "nombre": "God of War: Ragnarök",
+    "precio": 59990,
+    "descripcion": "Kratos y Atreus enfrentan el fin de los tiempos en la mitología nórdica.",
+    "imagen": "JG004_gow_ragnarok.jpg",
+    "destacado": true,
+    "tags": ["ps5", "sony", "accion", "aventura"]
+  },
+  {
+    "id": "Juego5",
+    "categoria": "Juegos",
+    "nombre": "Marvel's Spider-Man 2",
+    "precio": 69990,
+    "descripcion": "Peter Parker y Miles Morales unen fuerzas en este mundo abierto de Nueva York.",
+    "imagen": "JG005_spiderman2.jpg",
+    "destacado": true,
+    "tags": ["ps5", "sony", "accion", "open world"]
+  },
+  {
+    "id": "Juego6",
+    "categoria": "Juegos",
+    "nombre": "The Last of Us Part I",
+    "precio": 54990,
+    "descripcion": "Remake del aclamado juego de supervivencia emocional de Naughty Dog.",
+    "imagen": "JG006_tlou1.jpg",
+    "destacado": true,
+    "tags": ["ps5", "sony", "accion", "historia"]
+  },
+  {
+    "id": "Juego7",
+    "categoria": "Juegos",
+    "nombre": "Halo Infinite",
+    "precio": 49990,
+    "descripcion": "El Jefe Maestro regresa en una aventura de mundo semiabierto.",
+    "imagen": "JG007_halo_infinite.jpg",
+    "destacado": true,
+    "tags": ["xbox", "shooter", "accion"]
+  },
+  {
+    "id": "Juego8",
+    "categoria": "Juegos",
+    "nombre": "Forza Horizon 5",
+    "precio": 59990,
+    "descripcion": "Explora México en este espectacular juego de carreras de mundo abierto.",
+    "imagen": "JG008_forza5.jpg",
+    "destacado": true,
+    "tags": ["xbox", "carreras", "mundo abierto"]
+  },
+  {
+    "id": "Juego9",
+    "categoria": "Juegos",
+    "nombre": "Gears 5",
+    "precio": 39990,
+    "descripcion": "Acción intensa y narrativa profunda en la saga Gears of War.",
+    "imagen": "JG009_gears5.jpg",
+    "destacado": true,
+    "tags": ["xbox", "shooter", "accion"]
+  },
+  {
+    "id": "Juego10",
+    "categoria": "Juegos",
+    "nombre": "Elden Ring",
+    "precio": 59990,
+    "descripcion": "El aclamado RPG de mundo abierto creado por FromSoftware.",
+    "imagen": "JG010_eldenring.jpg",
+    "destacado": true,
+    "tags": ["rpg", "open world", "accion", "multiplataforma"]
+  }
+
+]
